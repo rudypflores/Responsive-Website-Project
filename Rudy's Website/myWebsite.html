@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/main.js"></script>  
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Rudy Flores Software Engineer</title>
+</head>
+
+
+<!--Icons for social media-->
+<body background="images/background.jpg">
+  <div id="social"> 
+  	<a href="https://github.com/rudypflores" target="_blank">
+      <img src="images/icons/ico_github.png" class="anim"/>
+    </a>
+    <a href="https://www.linkedin.com/in/rudy-pichola-flores-632921139" target="_blank">
+      <img src="images/icons/ico_linkedIn.png" class="anim"/>
+    </a>
+    <p style="float:right; font-weight: bolder; text-align: right; padding-right:15px; color:#1E1E1E;" class="fade">rudypichola@gmail.com</p>
+  </div>
+  <!--Title Video-->
+  <div id="banner">
+    <video width="960px" height="540px" muted loop autoplay preload>
+    <source src="video/banner.mp4?autoplay=1" type="video/mp4"></source>
+    </video>
+  </div>
+  <!--align all elements and resize-->
+  <div id="navigational">
+  <!--Creation of nav buttons-->
+  		<!-- Tab links -->
+		<div class="tab">
+		  <button class="tablinks" onclick="openTab(event, 'AboutMe')" id="defaultOpen">About Me</button>
+		  <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+		  <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
+		</div>
+
+		<!-- Tab content -->
+		<div id="AboutMe" class="tabcontent">
+			  <h1>About Me</h1>
+			  <img src="images/profilePic.jpg"/>
+		</div>
+
+		<div id="Projects" class="tabcontent">
+			  <h1>Projects</h1>
+			  <br/>
+			  <h2>- Magic Eight Ball Application -</h2>
+			  <p>Magic eight ball application that receives a string input from the user and generates a randomized string output from the computer.</p>
+			  		<!--Accordion 1-->
+			  		<nav class="menu">
+						<!--Drop down 1-->
+					    <nav class="drop-down-menu">
+					      	<input type="checkbox" class="activate" id="accordion-1" name="accordion-1">
+					      	<label for="accordion-1" class="menu-title">magicEightBall.js</label>
+					      	<div class="drop-down">
+					        	<embed src="files/magic8Ball.js" type="text/javascript" width="100%" height="100%" style="overflow: hidden" src="source">
+					     	</div>
+					    </nav>
+					</nav>
+					<a href="files/magic8Ball.js" download target="_blank">
+						<p style="font-weight: bolder; font-size:.7em;">*full page version here*</p>
+					</a>
+			  <br/>
+			  <h2>- Mini Linter Application -</h2>
+			  <p>Mini linter application that take a string input and removes clutter from a given string to output a fixed version of the original stirng.</p>
+					<!--Accordion 2-->
+					<nav class="menu">
+							<!--Code for the project-->
+						    <nav class="drop-down-menu">
+						      	<input type="checkbox" class="activate" id="accordion-2" name="accordion-2">
+						      	<label for="accordion-2" class="menu-title">miniLinter.js</label>
+						      	<div class="drop-down">
+						        	<embed src="files/miniLinter.js" type="text/javascript" width="100%" height="100%" style="overflow: hidden" src="source">
+						     	</div>
+						    </nav>
+					</nav>
+				<a href="files/miniLinter.js" download target="_blank">
+					<p style="font-weight: bolder; font-size:.7em;">*full page version here*</p>
+			 	</a>
+		</div>
+
+		<div id="Resume" class="tabcontent">
+			  <h1>Resume</h1>
+			  <p>Download a copy of my resume by clicking the download icon below</p>
+			  <a href="files/Resume_RudyFlores.pdf" download="Resume_RudyFlores.pdf" target="_blank">
+			  <img src="images/icons/ico_download.png" alt="Download Icon" style="height:128px; width:128px;" class="fade"/>
+			  </a>
+			  <p>Resume_RudyFlores.pdf</p>		
+		</div>
+
+  </div>
+</body>
+</html>
