@@ -4,7 +4,7 @@ body {
 }
 
 p {
-	font-size: .9em;
+	font-size: .9rem;
 	color: #FFFFFF;
 }
 
@@ -66,9 +66,7 @@ a {
 	margin-bottom: 8px;
 }
 
-/*Tabs for browsing through page*/
-
-/*Align and center the main content*/
+/*Containers for each tab and their properties*/
 #navigational {
 	width:960px !important;
 	margin-right: auto !important;
@@ -114,7 +112,7 @@ a {
 										}
 
 										.tabcontent p {
-											font-size: .9em;
+											font-size: .9rem;
 										}
 
 										/*colors for headings*/
@@ -127,110 +125,78 @@ a {
 												    to {opacity: 1;}
 												}
 
-
-
-/*Image text*/
-.container {
-  position: relative;
-  width:192px;
-  height:256px;
-}
-
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 162px;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 1.1em;
-  padding: 15px;
-  text-align: center;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-
-/*Accordion*/
+/*Accordion method*/
 .menu a {
   display: block;
   padding: 10px 15px;
 }
 
-.drop-down a {
-  min-width: 90px;
-}
+	.drop-down a {
+	  min-width: 90px;
+	}
 
-.drop-down-menu {
-  display: block;
-}
+		.drop-down-menu {
+		  display: block;
+		}
 
-.menu-title {
-  cursor: pointer;
-}
+	.menu-title {
+	  cursor: pointer;
+	  display:block;
+	  padding: 10px 15px;
+	}
 
-.menu-title {
-  display:block;
-  padding: 10px 15px;
-}
+		.activate {
+		  display: none;
 
-.activate {
-  display: none;
+		  position: absolute;
+		  cursor: pointer;
+		  width: 100%;
+		  height: 40px;
+		  margin: 0 0 0 -15px;
+		  opacity: 0;
+		}
 
-  position: absolute;
-  cursor: pointer;
-  width: 100%;
-  height: 40px;
-  margin: 0 0 0 -15px;
-  opacity: 0;
-}
+	/* Skin */
 
-/* Skin */
+	.menu a, .drop-down-menu {
+	  background: #FFFFFF;
 
-.menu a, .drop-down-menu {
-  background: #FFFFFF;
+	}
 
-}
+		.menu a:hover, .drop-down-menu:hover {
+		  background: #ddd;	/*Color for when hovered on title*/
 
-.menu a:hover, .drop-down-menu:hover {
-  background: #ddd;	/*Color for when hovered on title*/
+		}
 
-}
+	.drop-down a {
+	  background: #222;
+	}
 
-.drop-down a {
-  background: #222;
-}
+		.drop-down a:hover {
+		  background: #111;
+		}
 
-.drop-down a:hover {
-  background: #111;
-}
+			:checked ~ .menu-title {
+			  background: #11639C; /*color for when accordion is open*/
+			}
 
-:checked ~ .menu-title {
-  background: #11639C; /*color for when accordion is open*/
-}
+	.drop-down {
+	  max-height: 0;
+	  overflow: hidden;
+	}
 
-.drop-down {
-  max-height: 0;
-  overflow: hidden;
-}
+		.drop-down a {
+		  background: #222;
+		}
 
-.drop-down a {
-  background: #222;
-}
+			.activate:checked ~ .drop-down {
+			  max-height: 300px;
+			}
 
-.activate:checked ~ .drop-down {
-  max-height: 300px;
-}
-
-.drop-down, .menu a, .drop-down-menu {
-  -webkit-transform: translateZ(0);  
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
+				.drop-down, .menu a, .drop-down-menu {
+				  -webkit-transform: translateZ(0);  
+				  -webkit-transition: all 0.3s;
+				  -moz-transition: all 0.3s;
+				  -o-transition: all 0.3s;
+				  transition: all 0.3s;
+				}
