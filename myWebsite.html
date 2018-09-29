@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/main.js"></script>  
-
+	<!--Link JS and CSS to the website-->
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+   <script type="text/javascript" src="js/main.js"></script>  
+   <!--Metadata for website-->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Rudy Flores Software Engineer</title>
 </head>
-
-
 <!--Icons for social media-->
-<body background="images/background.jpg">
+<body background="images/background.jpg"><!--Background image-->
   <div id="social"> 
-  	<a href="https://github.com/rudypflores" target="_blank">
+  	<a href="https://github.com/rudypflores" target="_blank"> <!--GitHub-->
       <img src="images/icons/ico_github.png" class="anim"/>
     </a>
-    <a href="https://www.linkedin.com/in/rudy-pichola-flores-632921139" target="_blank">
+    <a href="https://www.linkedin.com/in/rudy-pichola-flores-632921139" target="_blank"> <!--LinkedIn-->
       <img src="images/icons/ico_linkedIn.png" class="anim"/>
     </a>
-    <p style="float:right; font-weight: bolder; text-align: right; padding-right:15px; color:#1E1E1E;" class="fade">rudypichola@gmail.com</p>
+    <p style="float:right; font-weight: bolder; text-align: right; padding-right:15px; color:#1E1E1E;" class="fade">rudypichola@gmail.com</p><!--Email-->
   </div>
   <!--Title Video-->
   <div id="banner">
     <video width="960px" height="540px" muted loop autoplay preload>
-    <source src="video/banner.mp4?autoplay=1" type="video/mp4"></source>
+    <source src="video/banner.mp4?autoplay=1" type="video/mp4"><!--Bitrate was set to 1200b/s to remain optimized.-->
     </video>
   </div>
   <!--align all elements and resize-->
@@ -31,19 +30,18 @@
   <!--Creation of nav buttons-->
   		<!-- Tab links -->
 		<div class="tab">
-		  <button class="tablinks" onclick="openTab(event, 'AboutMe')" id="defaultOpen">About Me</button>
+		  <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'AboutMe')">About Me</button>
 		  <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
 		  <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
 		</div>
-
-		<!-- Tab content -->
+		<!--About Me Tab-->
 		<div id="AboutMe" class="tabcontent">
 			  <h1>About Me</h1>
 			  <img src="images/profilePic.jpg"/>
 			  <br/>
 			  <p>Self-taught programmer & team player, experience with HTML, CSS, and JavaScript from working on personal projects in website building. Experience in Java from personal projects in the Java API with object oriented programming. I enjoy learning new things from my teammates and setting goals for myself.</p>
 		</div>
-
+		<!--Projects tab-->
 		<div id="Projects" class="tabcontent">
 			  <h1>Projects</h1>
 			  <br/>
@@ -51,7 +49,7 @@
 			  <p>Magic eight ball application that receives a string input from the user and generates a randomized string output from the computer.</p>
 			  		<!--Accordion 1-->
 			  		<nav class="menu">
-						<!--Drop down 1-->
+						<!--Code for the project-->
 					    <nav class="drop-down-menu">
 					      	<input type="checkbox" class="activate" id="accordion-1" name="accordion-1">
 					      	<label for="accordion-1" class="menu-title">magicEightBall.js</label>
@@ -81,7 +79,7 @@
 					<p style="font-weight: bolder; font-size:.7rem;">*full page version here*</p>
 			 	</a>
 		</div>
-
+		<!--Resume Tab-->
 		<div id="Resume" class="tabcontent">
 			  <h1>Resume</h1>
 			  <p>Download a copy of my resume by clicking the download icon below</p>
@@ -90,7 +88,6 @@
 			  </a>
 			  <p>Resume_RudyFlores.pdf</p>		
 		</div>
-
   </div>
 </body>
 </html>

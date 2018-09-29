@@ -110,7 +110,7 @@ a {
 										    border-top: none;
 										    animation: fadeEffect 1s; /* Fading effect takes 1 second */
 										}
-
+										/*Font size for the text within the tabs*/
 										.tabcontent p {
 											font-size: .9rem;
 										}
