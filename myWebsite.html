@@ -20,9 +20,12 @@
     <p style="float:right; font-weight: bolder; text-align: right; padding-right:15px; color:#1E1E1E;" class="fade">rudypichola@gmail.com</p><!--Email-->
   </div>
   <!--Title Video-->
+  <!--Issue found does video does not autoplay and remains stuck in any IOS or MAC platforms-->
   <div id="banner">
-    <video width="960px" height="540px" muted loop autoplay preload>
-    <source src="video/banner.mp4?autoplay=1" type="video/mp4"><!--Bitrate was set to 1200b/s to remain optimized.-->
+    <video width="960px" height="540px" muted loop autoplay preload="auto" poster="images/coverBanner.png">
+    	<source src="video/banner.webm" type="video/webm"><!--Bitrate was set to 1200b/s to remain optimized.-->
+    	<source src="video/banner.mp4" type="video/mp4"><!--Bitrate was set to 1200b/s to remain optimized.-->
+    	Your browser does not support the video tag.
     </video>
   </div>
   <!--align all elements and resize-->
@@ -39,9 +42,6 @@
 			  <h1>About Me</h1>
 			  	<div class="container">
 						<img src="images/profilePic.jpg"/>
-						<div class="container-box">
-						<p>Rudy Flores</p>
-						</div>
 				</div>
 			  <br/>
 			  <p>Self-taught programmer & team player, experience with HTML, CSS, and JavaScript from working on personal projects in website building. Experience in Java from personal projects in the Java API with object oriented programming. I enjoy learning new things from my teammates and setting goals for myself.</p>
